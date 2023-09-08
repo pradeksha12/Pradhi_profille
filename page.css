@@ -1,0 +1,117 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply general styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* Background image properties */
+    background-image: url('https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?w=996&t=st=1694150002~exp=1694150602~hmac=7ceef0f149e22d40c652ccb244a4e5f7977fd2b2ef1c09301b73d8514641965e');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: hsl(0, 0%, 96%);
+}
+#profile-picture {
+    position: absolute;
+    top: 20px; /* Adjust the top distance as needed */
+    left: 20px; /* Adjust the right distance as needed */
+    width: 100px; /* Set the width and height to create a circle */
+    height: 100px;
+    border-radius: 50%; /* Create a circular shape */
+    overflow: hidden; /* Hide any overflow if the image exceeds the circle */
+    border: 2px solid #fff; /* Optional border for the circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+#profile-picture img {
+    width: 100%;
+    height: auto;
+}
+/* Style the header */
+header {
+   
+    text-align: center;
+    background-color: rgba(0, 120, 212, 0.248);
+    color: #2d0303;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color:#333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style content sections */
+section {
+    padding: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Style portfolio projects */
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
